@@ -1,0 +1,83 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Donut chart showing total population by continent.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jsoh0011/FIT3179_Vis2/main/world_data_2023.csv"
+    },
+    "height": 300,
+    "width": "container",
+  
+    "transform": [
+      {
+        "aggregate": [
+          {"op": "average", "field": "Total_Tax_Rate", "as": "Continent_TTR"},
+          {"op": "count", "field": "Country", "as":"Country_Count"}
+        ],
+        "groupby": ["Continent"]
+      }
+    ],
+
+    "params": [
+        {
+          "name": "highlight",
+          "select": 
+          {
+            "type": "point",
+            "on": "mouseover"
+          }
+        }
+      ],
+    "mark": {"type": "arc", "innerRadius": 60, "stroke": "white"},
+    "encoding": {
+      "theta": {"field": "Continent_TTR", "type": "quantitative"},
+      "color": {
+        "field": "Continent",
+        "title": "Continents",
+        "type": "nominal",
+        "scale": {
+          "range": 
+          [
+            "#a90c38", 
+            "#cd243c", 
+            "#e84846", 
+            "#f5725d", 
+            "#fc9783", 
+            "#dfd4d1", 
+            "#94c0e0", 
+            "#75a7cd", 
+            "#5b8cb7", 
+            "#4573a1",  
+            "#2e5a87" 
+        ]
+        }
+      },
+        "strokeWidth": {
+            "condition": [
+                {
+                    "param": "highlight",
+                    "empty": false,
+                    "value": 5
+                }
+            ], 
+            "value": 1
+        },
+
+        "tooltip": [
+        {"field": "Continent", "type": "nominal", "title": "Continent "}, 
+        {"field": "Country_Count", "type": "quantitative", "title": "Number of Countries "},
+        {"field": "Continent_TTR", "type": "quantitative", "title": "Average Tax Rate % ", "format": ".2f"}
+      ]
+    }, 
+    "config": {
+      "title": {"fontSize": 16, "dy": -6}, 
+      "view": {"stroke": "transparent"},
+      "legend": {
+        "offset": -40, 
+        "titleFontSize": 13,
+        "labelFontSize": 12,
+        "clipHeight": 15
+      }
+    }
+  
+  }
+  

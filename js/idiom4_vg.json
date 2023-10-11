@@ -3,7 +3,7 @@
     "width": "container",
     "height": 450,
     "data": {
-      "url": "https://raw.githubusercontent.com/jsoh0011/FIT3179_Vis2/main/world_data_2023.csv"
+      "url": "https://raw.githubusercontent.com/jsoh0011/FIT3179_Vis2/main/data/world_data_2023.csv"
     },
     "params": [
       {

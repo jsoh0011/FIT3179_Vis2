@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/jsoh0011/FIT3179_Vis2/main/world_data_2023.csv"
+      "url": "https://raw.githubusercontent.com/jsoh0011/FIT3179_Vis2/main/data/world_data_2023.csv"
     }, 
     "height": 350, 
     "width": "container",
@@ -54,15 +54,15 @@
         "scale": {
           "range": 
           [
-            "#af3d19",
-            "#ba5f42",
-            "#c4846f",
-            "#cfaea2",
-            "#a2a2a2",
-            "#b2d0b4",
-            "#8cc691",
-            "#6bbb72",
-            "#4caf55"
+            "#108780", 
+            "#58728a", 
+            "#49017e", 
+            "#4f4554", 
+            "#a5969c", 
+            "#ab9d9c", 
+            "#b28ebc", 
+            "#c4c3d0", 
+            "#efcada"
           ]
         }
   

@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Donut chart showing total population by continent.",
     "data": {
-      "url": "https://raw.githubusercontent.com/jsoh0011/FIT3179_Vis2/main/world_data_2023.csv"
+      "url": "https://raw.githubusercontent.com/jsoh0011/FIT3179_Vis2/main/data/world_data_2023.csv"
     },
     "height": 300,
     "width": "container",
@@ -37,17 +37,17 @@
         "scale": {
           "range": 
           [
-            "#a90c38", 
-            "#cd243c", 
-            "#e84846", 
-            "#f5725d", 
-            "#fc9783", 
-            "#dfd4d1", 
-            "#94c0e0", 
-            "#75a7cd", 
-            "#5b8cb7", 
-            "#4573a1",  
-            "#2e5a87" 
+            "#85443f", 
+            "#b8473d", 
+            "#eeaa44", 
+            "#41638a", 
+            "#3e62ad", 
+            "#44bbdd", 
+            "#8ebcbd", 
+            "#b2b1ae", 
+            "#9eb6d0", 
+            "#e5c4c0",  
+            "#f4f4e1" 
         ]
         }
       },

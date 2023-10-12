@@ -97,14 +97,6 @@
         "fontSize": 12
       },
       "encoding": {
-        "color": {
-          "condition": {
-            "test": "datum.Unemployment_Rate < 28",
-            "value": "transparent"
-          },
-          "value": "black"
-        },
-
         "x": {
           "field": "Unemployment_Rate",
           "type": "quantitative"

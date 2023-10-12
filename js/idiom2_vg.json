@@ -5,7 +5,7 @@
     "url": "https://raw.githubusercontent.com/jsoh0011/FIT3179_Vis2/main/data/world_data_2023.csv"
   },
   "width": "container",
-  "height": {"step": 30},
+  "height": {"step": 35},
 
   "transform": [
     {
@@ -36,9 +36,10 @@
           "type": "nominal",
           "sort": "-x",
           "axis": {
-            "labelFontSize": 13,
+            "labelFontSize": 12,
             "titleFontSize": 13,
-            "titlePadding": -60
+            "titlePadding": -40,
+            "labelExpr": "substring(datum.value, 0, 20)"
           }
         },
         "color": {
@@ -93,7 +94,7 @@
       "mark": {
         "type": "text",
         "baseline": "top",
-        "dy": -25,
+        "dy": -20,
         "fontSize": 12
       },
       "encoding": {

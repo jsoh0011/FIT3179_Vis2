@@ -47,7 +47,7 @@
             "#b2b1ae", 
             "#9eb6d0", 
             "#e5c4c0",  
-            "#f4f4e1" 
+            "#f0ddc3" 
         ]
         }
       },
@@ -76,7 +76,8 @@
         "titleFontSize": 13,
         "labelFontSize": 12,
         "clipHeight": 15
-      }
+      },
+      "background": "#FFFDF4"
     }
   
   }

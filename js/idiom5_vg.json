@@ -36,7 +36,7 @@
           {
             "type": "text", 
             "radiusOffset": 13,
-            "fontSize": 13
+            "fontSize": 14
           },
           "encoding": 
           {
@@ -62,7 +62,7 @@
             "#ab9d9c", 
             "#b28ebc", 
             "#c4c3d0", 
-            "#efcada"
+            "#d7b6c4"
           ]
         }
   
@@ -92,7 +92,8 @@
         "titleFontSize": 14,
         "labelFontSize": 13,
         "clipHeight": 15
-      }
+      },
+      "background": "#FFFDF4"
     }
 }
   

@@ -158,5 +158,8 @@
         }
       }
     ], 
-    "config": {"title": {"fontSize": 16, "dy": -6}, "view": {"stroke": "transparent"}}
+    "config": {
+      "view": {"stroke": "transparent"},
+      "background": "#FFFDF4"
+    }
   }

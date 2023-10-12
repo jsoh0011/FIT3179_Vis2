@@ -34,9 +34,18 @@
         ],
         "mark": {
           "type": "bar", 
-          "color": "#9288b9", 
           "cursor": "pointer", 
-          "stroke": "black"}
+          "stroke": "black"
+        },
+        "encoding": {
+          "color": {
+            "condition": {
+              "test": "datum.Average_BR < 28",
+              "value": "lightgrey"
+            },
+            "value": "#d96f6f"
+          }
+        }
       },
 
       {
@@ -104,7 +113,8 @@
     }, 
     "config": {
         "scale": {"bandPaddingInner": 0.3}, 
-        "view": {"stroke": "transparent"}
+        "view": {"stroke": "transparent"},
+        "background": "#FFFDF4"
     }
   }
   

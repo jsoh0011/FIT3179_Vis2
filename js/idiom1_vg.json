@@ -72,7 +72,7 @@
           "scale": {
             "type": "linear",
             "domain": [60, 72, 80],
-            "range": ["#e5a6a6", "#d96f6f", "#cd4444", "#c11313"]
+            "range": ["#e5a6a6", "#d96f6f", "#cd4444", "#c72b2b"]
           }
         },
         "tooltip": [
@@ -97,7 +97,7 @@
       "mark": {
           "type": "text",
           "align":"center",
-          "color": "white",
+          "color": "black",
           "fontSize": 13
           },
       "encoding": {
@@ -123,6 +123,7 @@
         "titleFontSize": 12,
         "labelFontSize": 12,
         "orient": "right"
-      }
+      },
+      "background": "#FFFDF4"
     }
 }

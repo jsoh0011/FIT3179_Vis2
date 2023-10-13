@@ -65,8 +65,11 @@
             "#c4c3d0", 
             "#d7b6c4"
           ]
+        },
+        "legend": {
+          "padding": 50
         }
-  
+
       },
       "fillOpacity": {
         "condition": {"param": "select", "value": 1},

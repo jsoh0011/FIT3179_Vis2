@@ -40,7 +40,7 @@
           "filter": "datum.properties.NAME == 'Antarctica' || datum.properties.NAME == 'Greenland' || datum.properties.NAME == 'Taiwan' || datum.properties.NAME == 'Eq. Guinea' || datum.properties.NAME == 'New Caledonia' || datum.properties.NAME == 'W. Sahara'"  
         },
         {
-          "calculate": "'Data is not available here ' + datum.properties.NAME",
+          "calculate": "'Data is not available here in ' + datum.properties.NAME",
           "as": "note2"
         }
       ], 

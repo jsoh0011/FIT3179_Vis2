@@ -50,7 +50,7 @@
       "radius": {"field": "Language_Count", "scale": {"type": "sqrt", "zero": true, "rangeMin": 30}},
       "color": {
         "field": "Official_Language", 
-        "title": "Official Languages",
+        "title": "Languages",
         "type": "nominal", 
         "scale": {
           "range": 

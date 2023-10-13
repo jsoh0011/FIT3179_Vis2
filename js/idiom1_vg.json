@@ -27,13 +27,28 @@
     {
       "transform": [
         {
-          "calculate": "'Data is not available in ' + datum.properties.NAME",
+          "calculate": "datum.properties.NAME + ' has a different life expectancy'",
           "as": "note"
         }
       ],
-      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
+      "mark": {"type": "geoshape", "fill": "lightgrey", "stroke": "white"},
       "encoding": {"tooltip": {"field": "note"}}
     },
+    {
+      "transform": [
+        {
+          "filter": "datum.properties.NAME == 'Antarctica' || datum.properties.NAME == 'Greenland' || datum.properties.NAME == 'Taiwan' || datum.properties.NAME == 'Eq. Guinea' || datum.properties.NAME == 'New Caledonia' || datum.properties.NAME == 'W. Sahara'"  
+        },
+        {
+          "calculate": "'Data is not available here ' + datum.properties.NAME",
+          "as": "note2"
+        }
+      ], 
+      "mark": {"type": "geoshape", "fill": "#e5a6a6", "stroke": "white"},
+      "encoding": {"tooltip": {"field": "note2"}}
+
+    },
+
     {
       "data": {
         "url": "https://raw.githubusercontent.com/jsoh0011/FIT3179_Vis2/main/data/oceans.topojson",
@@ -48,7 +63,7 @@
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "white"}
     },
-    
+
     {
       "transform": [
         {
@@ -106,7 +121,7 @@
         "text": {"field": "properties.NAME", "type": "nominal"},
         "opacity": {
           "condition": {
-            "test": "datum.properties.NAME == 'China' || datum.properties.NAME == 'United States of America' || datum.properties.NAME == 'Australia' || datum.properties.NAME == 'Malaysia' || datum.properties.NAME == 'Brazil' || datum.properties.NAME == 'Russia' || datum.properties.NAME == 'Zambia' || datum.properties.NAME == 'Algeria'",
+            "test": "datum.properties.NAME == 'United States of America' || datum.properties.NAME == 'Australia' || datum.properties.NAME == 'Russia'",
             "value": 1
           },
           "value": 0
